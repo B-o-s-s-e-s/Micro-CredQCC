@@ -1,0 +1,17 @@
+<style media ="screen">
+.ninja{
+  color:black;
+  visibility: hidden;
+
+}
+#pizza{
+  color:darkred;
+  font-style: italic;
+  front-size :18 px;
+}
+a{
+  color: yellow;
+  font-family: cursive,sans-serif;
+  font-size:14px;
+}
+</style>
