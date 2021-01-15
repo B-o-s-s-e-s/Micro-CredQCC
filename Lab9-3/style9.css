@@ -1,0 +1,64 @@
+*{
+    box-sizing:border-box;
+    
+}
+
+body{
+    margin: 0;
+}
+
+/* Style header */
+.header{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    background-color:RGB(219, 204, 181);
+    padding: 20px;
+    text-align: center;
+    
+}
+
+/* Style top navigation bar */
+.topnav{
+    overflow: hidden;
+    background-color: RGB(80, 49, 47);
+    width: 100%;
+    
+
+}
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover{
+    background-color:#add;
+    color: black;
+    font-family: fantasy;
+}
+
+/* Create 3 equal columns that floats next to each other */
+.colume{
+    color:RGB(116, 50, 51);
+    font-family: Snell Roundhand, cursive;
+    float: left;
+    width: 25%;
+    padding: 15px;
+}
+
+/* Clear floats after the columes , a stop size for colume*/
+.row:after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+/* fit recording the minitoe */
+@media screen and (max-width: 600px){
+    .colume{
+        width: 100%;
+    }
+}
+

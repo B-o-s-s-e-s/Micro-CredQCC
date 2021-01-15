@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+/* Style header */
+.header{
+    background-color:#f1f1f1;
+    padding: 20px;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:RGB(88, 74, 68);
+    overflow-x: hidden;
+    padding-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color:RGB(230, 230, 231);
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color:white;
+    background-color:RGB(140, 117, 105);
+  }
+  
+  
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+/* Create 3 equal columns that floats next to each other */
+.colume{
+    float: left;
+    margin-left: 160px;
+    font-size: 28px;
+    padding: 15px;
+    width: 20%
+   
+}
+
+/* Clear floats after the columes , a stop size for colume*/
+.row:after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+/* fit recording the minitoe */
+@media screen and (max-width: 600px){
+    .colume{
+        width: 100%;
+    }
+}
+
