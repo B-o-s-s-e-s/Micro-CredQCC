@@ -1,0 +1,142 @@
+<!Doctype >
+<html lang ="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name = "viewport" content="width =device-width, initial-scale =1">
+    <title> Project 3 </title>
+    <link href="Pro3.css" rel="stylesheet">
+    <script src="myScript.js" defer></script>
+    <script type = "text/javascript" src = "JQuery 3.5.1.js"></script>
+  </head>
+<body>
+
+<div class = "header">
+    <h1> Project 3 Javascript</h1>
+    <p> 6 selections for Javascript </p>
+</div>
+
+<div class ="topnav">
+    <a href ="https://www.google.com/search?client=safari&rls=en&q=color+theory&ie=UTF-8&oe=UTF-8"> link  </a>
+    <a href ="../../Lab/Lab 14/pt.html"> Lab 14 ninja and reset </a>
+    <a href ="../../Lab/Lab 15 /index.html"> Lab 15 color button  </a>
+</div>
+
+    <!--Click and Reset-->
+    <div class ="row" column1>
+
+      <div class = "colume">
+        <h3>Click and Reset</h3>
+        <p>When click Submit button, it shows Click on Reset. When click Reset button, it shows Click on Submit.</p>
+        <button type = "button" onclick = "myfunction()" >Submit</button>
+        <button type = "button" onClick = "textReset()"  class = "button-property"> Reset</button>
+        <p id ="demo" style="color:red;">Click on Submit</p> 
+     </div>
+
+    <!--calculator: Do not work-->
+    <div class = "colume">
+      <h3> Calculator </h3>
+      <form name = "calculator">
+        Number 1
+        <input type="BOX" name="num1" value="">
+        <br>
+        Number 2
+        <input type="BOX2" name="num2" value="">
+        <br>
+        <br>
+        <input id ="Add" type = "button" value = "+" name = "add" onClick = "Addition()">
+        <input id ="Subtract" type = "button" value = "-" name = "subtract" onClick = "Subtract()">
+        <input id ="Time" type = "button" value = "×" name = "time" onClick = "Time()">
+        <input id ="Division" type = "button" value = "÷" name = "division" onClick = "Divison()">
+        <p id="one"></p>
+      </form>
+    </div>
+
+    <!--Introduce ourself(Ninja)-->ß
+      <div class = "colume">
+        <h3> Build the paragraph about myself</h3>
+        <p>Ask user for inputs in alerk window and build up a paragraph</p>
+        <button type = "button" onClick= "introduceOurself()" 
+        class = "button-property"> Start </button>
+        <p id = "showHere"> Paragraph will show here, after you finished.</p>
+        
+      </div>
+
+    <!-- Grocery List -->
+      <div class = "colume">
+        <h3>Welcome to Target</h3>
+        <table border= "5" style="background-color:aliceblue;">
+        <th style="color:mediumslateblue;"> Items </th>
+        <th style="color:teal;"> Price </th>
+        <th style="color:firebrick;"> Add </th>
+        <th style="color:firebrick;"> Remove </th>
+        <th style="color:firebrick;"> Subtotal </th>
+  
+        <tr>
+            <td> Pasta <input id="pastaInput" type="number"> </input> </td>
+            <td> $10 </td>
+            <td> <button type="button" onclick="addToCart(10)" class="button-property">Add to Cart</button> </td>
+            <td>  <button type="button" onclick="remove(10)" class="button-property">Remove</button> </td>
+            <td id="pasta" class="column4"> $0 </td>
+        </tr>
+  
+        <tr>
+            <td> Rice <input id="riceInput" type="number"> </input></td>
+            <td> $50 </td>
+            <td>  <button type="button" onclick="addToCart(50)" class="button-property">Add to Cart</button> </td>
+            <td>  <button type="button" onclick="remove(50)" class="button-property">Remove</button> </td>
+             <td id="rice" class="column4"> 0 </td>
+        </tr>
+  
+        <tr>
+            <td> Eggs <input id="eggsInput" type="number"> </input></td>
+            <td> $5 </td>
+            <td>  <button type="button" onclick="addToCart(5)" class="button-property">Add to Cart</button> </td>
+            <td>  <button type="button" onclick="remove(5)" class="button-property">Remove</button> </td>
+             <td id="eggs" class="column4"> 0 </td>
+        </tr>
+  
+        <tr>
+            <td> Chicken <input id="chickenInput" type="number"> </input> </td>
+            <td> $30 </td>
+            <td>  <button type="button" onclick="addToCart(30)" class="button-property">Add to Cart</button></td>
+            <td>  <button type="button" onclick="remove(30)" class="button-property">Remove</button> </td>
+             <td id="chicken" class="column4"> 0 </td>
+        </tr>
+  
+        <tr>
+            <td> Cheese <input id="cheeseInput" type="number"> </input></td>
+            <td> $8 </td>
+            <td>  <button type="button" onclick="addToCart(8)" class="button-property">Add to Cart</button> </td>
+            <td>  <button type="button" onclick="remove(8)" class="button-property">Remove</button> </td>
+             <td id="cheese" class="column4"> 0 </td>
+        </tr>
+      </table><br>
+  
+      <button type="button" onclick="checkOut()" class="button-property">Checkout</a></button>
+  
+      <button type="button" onclick="display()" class="button-property">Display Total</a></button>
+      <p id = "ninjaDesc"> Information(Change)</p>
+      </div>
+
+      <!-- color button: Up and down-->
+      <div class ="colume"> 
+        <h3>Color Button</h3>
+        <p>Click button to change color on the array</p>
+          <div class ="leftBtn" onclick="up()">
+            up
+          </div>
+          <br>
+          <div class ="rightBtn" onclick="down()">
+            down
+          </div>
+          <h2 id ="roygbiv" > Colors</h2>
+      </div>
+    </div>
+    <footer>
+      <p>Author: Hege Refsnes</p>
+      <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+    </footer>
+  </body>
+</html>
+
+
