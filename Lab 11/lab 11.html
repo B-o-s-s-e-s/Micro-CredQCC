@@ -1,0 +1,141 @@
+<!Doctype >
+<html lang ="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name = "viewport" content="width =device-width, initial-scale =1">
+    <title> Lab 12 </title>
+    <link href="style11.css" rel="stylesheet">
+    <script src="myScript.js" defer></script>
+    <script src = "../../Practice/js/add-content.js"> </script>
+  </head>
+<body>
+  <button type = "button" onclick = "myfunction()" >Click Me!</button>
+  <p id ="demo" style="color:red;"><b>Click Me When Class Over<b></p>
+
+<div class = "header">
+    <h1> Input and Output</h1>
+    <p>Resize the browser window to see the responsive effect.</p>
+</div>
+
+<div class ="topnav">
+    <a href ="https://www.google.com/search?client=safari&rls=en&q=color+theory&ie=UTF-8&oe=UTF-8"> link  </a>
+    <a href ="https://www.google.com/search?client=safari&rls=en&q=color+theory&ie=UTF-8&oe=UTF-8"> link  </a>
+    <a href ="https://www.google.com/search?client=safari&rls=en&q=color+theory&ie=UTF-8&oe=UTF-8"> link  </a>
+<button onclick = "reStyle(0);return false"> style3</button>
+</div>
+
+<div class ="row" column1>
+  <div class = "colume colume1">
+    <h3>Grocery List</h3>
+    <form name = "groceryList">
+     Foods:
+     <br>
+     <input type="text" name="name1" value="">
+     <br>
+     <input type="text" name="name2" value="">
+     <br>
+     <input type="text" name="name3" value="">
+     <br>
+     <input type="text" name="name4" value="">
+     <br>
+     <input type="text" name="name5" value="">
+     <br>
+     <input type="text" name="name6" value="">
+     <br>
+     $:
+     <br>
+     <input type="text" name="money" value="">
+     <br>
+     <input type = "button" value = "Add to the list" onClick = "window.alert('I need to buy '+ document.groceryList.name1.value + ' , '+
+                                                                 document.groceryList.name2.value + ' , '+
+                                                                 document.groceryList.name3.value+' , '+
+                                                                 document.groceryList.name4.value + ' , '+ 
+                                                                 document.groceryList.name5.value + ' , '+
+                                                                 document.groceryList.name6.value + '. '+ 'It costs ' +
+                                                                 document.groceryList.money.value + ' dollars ');">          
+   </form>   
+  </div>
+
+<!--
+</div>
+
+    <div class = "colume">
+     <h2>Colume</h2>
+     <form name = "alertform">
+       Enter your name:
+       <input type = "text"  name = "yourname">
+       <input type = "button" value = "Go" onClick = "window.alert('Hello '+ document.alertform.yourname.value);">
+     </form>
+     <form name = "addressform">
+      Name :<input name = "yourname"><br/>
+      Phone:<input name = "phone"><br/>
+      Email :<input name = "email"><br/>
+    </form>
+    </div>
+  -->
+
+    <div class = "colume colume2";>
+     <h3>Fortuneteller</h3>
+     <form name = "roceryList">
+      Name    :
+      <input type="text" name="name" value="">
+      <br>
+      Job     :
+      <input type="text" name="job" value="">
+      <br>
+      Location :
+      <input type="text" name="location" value="">
+      <br>
+      Ideal partner:
+      <input type="text" name="ideal" value="">
+      <br>
+      Child   :
+      <input type="text" name="child" value="">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <input type = "button" value = "See what fortuneteller say" onClick = "window.alert(document.fortuneTeller.name.value + ' work as a '+
+                                                                  document.fortuneTeller.job.value + ' in '+
+                                                                  document.fortuneTeller.location.value+' married with '+
+                                                                  document.fortuneTeller.ideal.value + ' have '+ 
+                                                                  document.fortuneTeller.child.value + 'childs');">          
+    </form>    
+   </div>
+
+  <div>
+    <h3> Calculator </h3>
+    <form name = "calculator">
+      Number 1
+      <input type="BOX" name="num1" value="">
+      <br>
+      Number 2
+      <input type="BOX2" name="num2" value="">
+      <br>
+      <br>
+      <input id ="Add" type = "button" value = "+" name = "add" onClick = "Addition()">
+      <input id ="Subtract" type = "button" value = "-" name = "subtract" onClick = "Subtract()">
+      <input id ="Time" type = "button" value = "×" name = "time" onClick = "Time()">
+      <input id ="Division" type = "button" value = "÷" name = "division" onClick = "Divison()">
+      <p id="one"></p>
+    </form>
+  </div>
+</div>
+
+
+
+<script>
+  function myfunction(){
+    document.getElementById("demo").innerHTML = "Let it go~";
+  }
+  /*
+  x = prompt("Enter Number", " ")
+  document.write("Luna <br>", + x)
+  </script>
+ </body>
+</html>
+
+
