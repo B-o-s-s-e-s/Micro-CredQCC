@@ -1,0 +1,12 @@
+
+
+
+img{
+  position: relative;
+  width: 250px;
+  border:0px;
+  border-width: thick;
+  border-style: double;
+  border-radius: 100%;
+  border-color:burlywood;
+}
